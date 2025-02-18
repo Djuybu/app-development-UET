@@ -10,7 +10,15 @@ import jakarta.persistence.Id;
 @Entity
 public class Employee {
 
-    // @ID This annotation specifies 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    // @ID This annotation specifies
     // the primary key of the entity.
     @Id
 
